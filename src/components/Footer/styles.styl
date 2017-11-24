@@ -1,0 +1,152 @@
+@import '~@/styles/mixins';
+
+.root {
+  width: 100%;
+  +media-up(lg) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+  }
+}
+
+.information {
+  background-color: #FFFFFF;
+  padding: 1.25em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  +media-down(xs) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  & svg, svg use >svg {
+    fill: black;
+  }
+}
+
+.address {
+  color: #000000;
+  font-size: 0.8em;
+  padding: 0.5em;
+  +media-down(xs) {
+    padding-bottom: 1em;
+  }
+}
+
+.phone-and-address {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  +media-down(xs) {
+    width: 100vw;
+  }
+}
+
+.phone {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: 0.5em;
+  margin: 0;
+  width: max-content;
+  +media-down(xs) {
+    width: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20vw;
+  +media-down(xs) {
+    width: 100vw;
+  }
+}
+
+.anchors {
+  font-size: 1em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em;
+  &:hover {
+    color: #F30E5F;
+  }
+}
+
+.social {
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+}
+
+
+.social svg:hover {
+  &, & use>svg {
+    fill: #F30E5F;
+  }
+}
+
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  +media-down(xs) {
+    padding-top: 2em;
+    width: 100vw;
+    align-items: center;
+  }
+  width: 40vw;
+}
+
+.apps img {
+  width: 120px;
+  &::selection {
+    background: none;
+  }
+}
+
+.bottom {
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  +media-down(xs) {
+    flex-direction: column;
+    text-align: center;
+  }
+  & svg, svg use >svg {
+    fill: black;
+  }
+}
+
+.copyright {
+  text-align: center;
+  +media-up(md) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.made-by {
+  height: 6em;
+  width: 12em;
+  padding: 1em;
+}
+
+.made-by p {
+  margin: 0;
+}

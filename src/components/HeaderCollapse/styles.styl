@@ -1,0 +1,139 @@
+@import '~@/styles/mixins';
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #D7D7D7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 100%;
+  z-index: 101;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.dropdown-anchor {
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.button-get-barbered {
+  border: 1px solid #D32E83;
+  background-color: transparent;
+  color: #D32E83;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  font-size: 0.6em;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  outline: none;
+  cursor: pointer;
+  &::selection {
+    background: #FFFFFF;
+  }
+  &:hover {
+    border: 1px solid #D32E83;
+    color: #000000;
+    background-color: #D32E83;
+  }
+  & svg, svg use >svg {
+    fill: #D32E83;
+    stroke: #D32E83;
+  }
+  &:hover svg, svg use >svg {
+    fill: #000000;
+    stroke: #000000;
+  }
+}
+
+.phone-and-time {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  +media-down(lg) {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    transform: translate(-50%, 25%);
+  }
+  +media-down(md) {
+    display: none;
+  }
+}
+
+.phone {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.time {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+  margin: 0.5em;
+  & svg {
+    fill: #000000;
+  }
+}
+
+.close-menu {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  margin: 1.875em;
+  box-sizing: content-box;
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  & svg, svg use >svg {
+    stroke: black;
+  }
+  +media-down(xs) {
+    margin: 1em;
+    margin-top: 1.5em;
+  }
+}
+
+:global(.menu-enter-active) {
+  transition: all 0.5s;
+}
+
+:global(.menu-leave-active) {
+  transition: all 0.5s;
+}
+
+:global(.menu-enter) {
+  transform: translateY(-100%);
+}
+
+:global(.menu-leave-to) {
+  transform: translateY(-100%);
+}

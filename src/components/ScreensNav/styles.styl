@@ -1,0 +1,86 @@
+@import '~@/styles/mixins';
+
+.navigation_white {
+  & a {
+    color: #FFFFFF;
+  }
+  & svg, svg use>svg {
+    stroke: #FFFFFF;
+    fill: transparent;
+  }
+}
+
+.navigation_black {
+  & a {
+    color: #000000;
+  }
+  & svg, svg use>svg {
+    stroke: #000000;
+    fill: transparent;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  height: 100%;
+  padding-left: 1.25em;
+  z-index: 1;
+  +media-down(xs) {
+    display: none;
+  }
+  & a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: transform 0.2s;
+    &::selection {
+      background: #D32E83;
+    }
+    &:hover {
+      transform: scale(1.5);
+      font-weight: bold;
+    }
+  }
+}
+
+.navigation :global(.router-link-exact-active) {
+  font-weight: bold;
+  transform: scale(1.5);
+}
+
+.for-scroll {
+  width: 20px;
+  padding-top: 1em;
+  position: relative;
+  left: 2px;
+  top: -10px;
+  +media-down(lg) {
+    display: none;
+  }
+}
+
+.pink-point {
+  & svg, svg use>svg {
+    fill: #D32E83;
+    stroke: #D32E83;
+  }
+  animation-name: point;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+@keyframes point {
+  0% { bottom: 15%; }
+  30% { bottom: 10%; }
+  100% { bottom: 15%; }
+}

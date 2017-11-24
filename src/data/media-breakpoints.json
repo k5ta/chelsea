@@ -1,0 +1,24 @@
+{
+  "height": {
+    "indices": { "sm": 0, "lg": 1 },
+    "constraints": ["0px", "769px"]
+  },
+  "width": {
+    "indices": {
+      "xs": 0,
+      "sm": 1,
+      "md": 2,
+      "lg": 3,
+      "xl": 4,
+      "xxl": 5
+    },
+    "constraints": [
+      "0px",
+      "576px",
+      "768px",
+      "992px",
+      "1200px",
+      "1384px"
+    ]
+  }
+}

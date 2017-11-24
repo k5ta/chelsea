@@ -1,0 +1,19 @@
+media-breakpoints = json('../../data/media-breakpoints.json', {hash: true})
+
+media-up(name, dimension = width)
+  breakpoints = media-breakpoints[dimension]
+  @media (min-{dimension}: breakpoints.constraints[breakpoints.indices[name]])
+    {block}
+
+media-down(name, dimension = width)
+  breakpoints = media-breakpoints[dimension]
+  constraint-next = breakpoints.constraints[breakpoints.indices[name] + 1]
+  @media (max-{dimension}: (constraint-next - 1px))
+    {block}
+
+media-between(name-min, name-max, dimension = width)
+  breakpoints = media-breakpoints[dimension]
+  constraint-min = breakpoints.constraints[breakpoints.indices[name-min]]
+  constraint-max = breakpoints.constraints[breakpoints.indices[name-max]]
+  @media (min-{dimension}: constraint-min) and (max-{dimension}: (constraint-max - 1px))
+    {block}

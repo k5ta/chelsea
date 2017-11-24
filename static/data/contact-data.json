@@ -1,0 +1,10 @@
+{
+    "city": "Москва",
+    "street": "пр. Аэропорта, дом 8 стр. 3",
+    "phone": "+7 915 444 55 51",
+    "phoneRef": "tel:+79154445551",
+    "mail": "info@chelsea.one",
+    "mailRef": "mailto:info@chelsea.one",
+    "time": "Пн - вс: 11:00 - 22:00",
+    "map": "https://goo.gl/maps/Y9csHPwvY3z"
+}

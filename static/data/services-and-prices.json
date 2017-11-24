@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Причёска",
+    "className": "pricesTableHairstyle",
+    "discount": "-5%",
+    "prices": [
+      {
+        "for": "Мужская стрижка",
+        "regular": "1800 ₽",
+        "discount": "1710 ₽"
+      },
+      {
+        "for": "Стрижка под машинку",
+        "regular": "1000 ₽",
+        "discount": "950 ₽"
+      },
+      {
+        "for": "Камуфляж седины",
+        "regular": "1000 ₽",
+        "discount": "950 ₽"
+      },
+      {
+        "for": "Детская стрижка",
+        "regular": "1300 ₽",
+        "discount": "1235 ₽"
+      },
+      {
+        "for": "Окрашивание",
+        "regular": "от 2500 ₽",
+        "discount": "от 2375 ₽"
+      }
+    ]
+  },
+  {
+    "name": "Борода",
+    "className": "pricesTableBeardstyle",
+    "discount": "-5%",
+    "prices": [
+      {
+        "for": "Стрижка бороды и усов",
+        "regular": "1000 ₽",
+        "discount": "950 ₽"
+      },
+      {
+        "for": "Традиционное бритьё опасной бритвой",
+        "regular": "1500 ₽",
+        "discount": "1425 ₽"
+      },
+      {
+        "for": "Моделирование бороды",
+        "regular": "1500 ₽",
+        "discount": "1425 ₽"
+      },
+      {
+        "for": "Камуфляж бороды",
+        "regular": "1000 ₽",
+        "discount": "950 ₽"
+      },
+      {
+        "for": "Укладка",
+        "regular": "500 ₽",
+        "discount": "475 ₽"
+      }
+    ]
+  }
+]

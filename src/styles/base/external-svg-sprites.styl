@@ -1,0 +1,6 @@
+// Overrides display: none defined in external sprites by svg-sprite-loader.
+// When svgxuse adds symbol definitions to the document it also imports
+// the styles. Deleting this will make all svgs go display: none in IE.
+
+:global(.sprite-symbol-usage)
+  display inline !important

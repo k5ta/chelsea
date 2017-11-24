@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Стрижка + Борода",
+    "discount": "-13%",
+    "price": {
+      "regular": "2800 ₽",
+      "discount": "2660 ₽"
+    }
+  },
+  {
+    "name": "Отец и сын",
+    "discount": "-10%",
+    "price": {
+      "regular": "2800 ₽",
+      "discount": "2660 ₽"
+    }
+  }
+]

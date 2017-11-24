@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Роман",
+    "position": "Барбер",
+    "img": "roman.png",
+    "description": "Цель дяди Ромы - чтобы каждый клиент счастливо улыбался после стрижки. Любимые фразы: \"Не болтай\" и \"Да пошел ты\". Несет чистейший юмор в коллектив.",
+    "socLinks": [
+      { "name": "instagram", "ref": "https://www.instagram.com/pomec/", "img": "instagram" }
+    ],
+    "enrollSite": "https://n19278.yclients.com/company:37601?o=m157453"    
+  },
+  {
+    "name": "Александр",
+    "position": "Барбер",
+    "img": "sasha.png",
+    "description": "Наш универсальный солдат, умеет все, стрижки, окрашивание, ракетостроение... Техничный мастер, приверженец идеологии Vidal Sassoon.",
+    "socLinks": [
+      { "name": "instagram", "ref": "https://www.instagram.com/alex.bright1/", "img": "instagram" }
+    ],
+    "enrollSite": "https://n19278.yclients.com/company:37601?o=m61668"
+  },
+  {
+    "name": "Полина",
+    "position": "Барбер",
+    "img": "polina.png",
+    "description": "Очень творческая натура. Питает любовь к коротким стрижкам. Любит петь, создала свою музыкальную группу.",
+    "socLinks": [
+      { "name": "instagram", "ref": "https://www.instagram.com/eava_tuevskaya/", "img": "instagram" }
+    ],
+    "enrollSite": "https://n19278.yclients.com/company:37601?o=m154457"    
+  }
+]
